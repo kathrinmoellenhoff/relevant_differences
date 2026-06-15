@@ -22,10 +22,10 @@ for(j in 1:m)
   numerator <- bbridge[n] 
   vectordenom <- seq(epsilon,1,by=0.1) 
   denominator <- sapply(vectordenom, function(x) bbridge[x*n]/x - bbridge[n]) 
-  denominator <- sqrt(mean(denominator^2))
+  denominator <- sqrt(mean(denominator^2) * (1-epsilon))
   counter[j] <- numerator/denominator
 }
-quant <- unname(quantile(counter,0.95)) # 1.754643 for epsilon = 0.1
+quant <- unname(quantile(counter,0.95)) # 1.889786 for epsilon = 0.1 
 
 #### Simulation: general Settings ###
 
