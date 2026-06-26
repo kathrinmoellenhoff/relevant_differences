@@ -48,8 +48,8 @@ DeltaVec <- seq(0.001381951,0.4,0.0025) #choice for simulating an entire range o
 
 # true values for Scenario 2b are
 #sd=1: 0.1313002
-#sd=2: 0.03892709
-#sd= .5: 0.2097251
+#sd=2: 0.0548546
+#sd= .5: 0.2558589
 
 # grid for y
 minI <- 2
